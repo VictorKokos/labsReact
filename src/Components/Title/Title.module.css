@@ -1,0 +1,54 @@
+@keyframes topTitleAnimation
+{
+    from {text-shadow: -20px 0px 10px white; }
+    to {text-shadow: 20px 0px 30px white; }
+}
+@keyframes bottomTitleAnimation
+{
+    from {color: rgb(147, 167, 255); }
+    80% {color: rgb(147, 167, 255);}
+    81% {color: rgb(247, 78, 78); }
+    99% {color: rgb(247, 78, 78); }
+    to {color: rgb(147, 167, 255);}
+}
+
+
+
+.title
+{
+   
+    height:300px;
+    width:700px;
+  
+    margin: auto;
+    grid-area: title;
+}
+.topTitle
+{
+    text-align: center;
+    font-size: 120px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    color: rgb(55, 205, 225);
+
+    animation-name: topTitleAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.bottomTitle
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    
+    text-shadow: 10px 5px black;
+
+    animation-name: bottomTitleAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.alerting
+{
+    width:40px
+}

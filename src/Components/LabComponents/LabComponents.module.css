@@ -1,0 +1,30 @@
+.labComponents
+{
+    grid-area:laba;
+   
+    
+    margin: auto;
+    z-index:1;
+    
+    width:90%;
+    height:90%;
+    border-radius: 10%;
+}
+.border
+{
+    border: 20px solid black;
+    border-radius: 10%;
+    width:100%;
+    height: 100%;
+    background-color: white;
+  
+}
+.inside
+{
+    width:80%;
+    height: 80%;
+    margin: 0;
+    z-index: 2;
+    margin: auto;
+    padding: auto;
+}

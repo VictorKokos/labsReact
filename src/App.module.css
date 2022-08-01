@@ -1,0 +1,11 @@
+.app
+{
+    position: relative;
+width:100%;
+background-image: radial-gradient( at top,   rgb(0, 9, 105), rgb(115, 197, 245));
+   height:1000px;
+   display:grid;
+   grid-template-columns: 1fr 5fr;
+   grid-template-rows: 1fr 4fr;
+   grid-template-areas: 'title title' 'labChoice laba';
+}
