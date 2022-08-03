@@ -4,7 +4,7 @@ let allReducers = combineReducers(
     {Laba4:Laba4Reducer}
 )
 let store = configureStore(
-   { reducer: allReducers}
+   { reducer: allReducers},
 )
 
 export default store

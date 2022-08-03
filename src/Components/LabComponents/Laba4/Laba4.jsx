@@ -1,3 +1,4 @@
+import CalendarContainer from './Calendar/CalendarContainer'
 import s from './Laba4.module.css'
 
 let Laba4 = () =>
@@ -7,7 +8,7 @@ let Laba4 = () =>
             <div className={s.title}>
             Laba4
             </div >
-           
+           <CalendarContainer />
             </div>
     )
 }

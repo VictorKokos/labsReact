@@ -1,0 +1,8 @@
+.Weekday
+{
+    grid-area: weekday;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-size: 35px;
+    color:rgb(0, 98, 255)
+}
