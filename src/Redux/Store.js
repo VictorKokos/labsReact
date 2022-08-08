@@ -1,10 +1,12 @@
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import Laba4Reducer from './Laba4Reducer'
 import Laba5Reducer from './Laba5Reducer'
+import Laba6Reducer from './Laba6Reducer'
 let allReducers = combineReducers(
     {
         Laba4:Laba4Reducer,
-        Laba5:Laba5Reducer
+        Laba5:Laba5Reducer,
+        Laba6:Laba6Reducer
     }
 )
 let store = configureStore(
