@@ -7,12 +7,16 @@ export let setSelectedDay = createAction('Laba4SetSelectedDay',
  export let setMonth = createAction('Laba4SetMonth',
  (date) => {return{payload:{date:date}}})
 
+ export let setDoubleClickDay = createAction('Laba4setDoubleClickDay',
+ (date) => {return{payload:{date:date}}})
+
 let initialState = {
     selectedDate: {},
     selectedDay: {},
     currentDay: "",
     monthName:"",
-    year:""
+    year:"",
+    doubleClickDay:'',
 }
 
 
@@ -91,6 +95,11 @@ initialState,
                 }
         }
         state.year = action.payload.date.getFullYear()
+    },
+    [setDoubleClickDay] : (state, action) =>
+    {
+        
+        state. doubleClickDay = action.payload.date
     }
 }
 )

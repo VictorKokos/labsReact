@@ -47,7 +47,8 @@ class CalendarBody extends React.Component
              className={classNames(
             s.date, {
             [s.today]: CalendarFunctions.areDaysEqual(date, currentDate),
-            [s.selected]: CalendarFunctions.areDaysEqual(date, selectedDate)
+            [s.selected]: CalendarFunctions.areDaysEqual(date, selectedDate),
+            [s.note]: this.props.Notes.NotesArray.some(note => note.date == date)
             } )}>{date.getDate()}
             </td> 
             :<td 

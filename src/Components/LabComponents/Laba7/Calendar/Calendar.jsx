@@ -9,7 +9,7 @@ const Calendar = (props) =>
         <div className={s.Calendar}>
 <CalendarHead setMonth ={props.setMonth} Laba4={props.Laba4}/>
 <CalendarBody setSelectedDay ={props.setSelectedDay}
- setMonth={props.setMonth} Laba4={props.Laba4} setDoubleClickDay ={props.setDoubleClickDay}/>
+ setMonth={props.setMonth} Laba4={props.Laba4} Notes={props.Notes} setDoubleClickDay ={props.setDoubleClickDay}/>
         
         </div>
     )
