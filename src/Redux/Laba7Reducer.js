@@ -135,8 +135,9 @@ let Laba7Reducer = createReducer(
         },
         [setDoubleClickDay] : (state, action) =>
         {
-            
+          
             state. doubleClickDay = action.payload.date
+            
         },
         [changeBirthDay] : (state, action) =>
         {

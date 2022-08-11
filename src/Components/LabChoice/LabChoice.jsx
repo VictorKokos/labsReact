@@ -10,6 +10,9 @@ let LabChoice = () =>
         <NavLink className={s.lab} to="/Laba5">Лабораторная работа 5</NavLink>
         <NavLink className={s.lab} to="/Laba6">Лабораторная работа 6</NavLink>
         <NavLink className={s.lab} to="/Laba7">Лабораторная работа 7</NavLink>
+        <NavLink className={s.lab} to="/Laba8">Лабораторная работа 8</NavLink>
+        <NavLink className={s.lab} to="/Laba9">Лабораторная работа 9</NavLink>
+        <NavLink className={s.lab} to="/Laba10">Лабораторная работа 10</NavLink>
         </div>
     )
 }
