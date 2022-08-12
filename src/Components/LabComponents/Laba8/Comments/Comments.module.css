@@ -17,7 +17,7 @@
 position: absolute;
 width: 296px;
 height: 42px;
-left: 141px;
+left: 161px;
 top: 23px;
 
 background: #FFFFFF;
@@ -29,7 +29,7 @@ border: 1px solid #000000;
 display: inline;
 width: 296px;
 height: 42px;
-left: 141px;
+left: 161px;
 top: 23px;
 
 background: #FFFFFF;
@@ -42,7 +42,7 @@ border: 1px solid #000000;
 position: absolute;
 width: 296px;
 height: 22px;
-left: 141px;
+left: 161px;
 top: 72px;
 
 background: #FFFFFF;
@@ -53,7 +53,7 @@ border: 1px solid #000000;
     box-sizing: border-box;
 width: 296px;
 height: 22px;
-left: 141px;
+left: 161px;
 top: 72px;
 display: inline;
 background: #FFFFFF;
@@ -78,18 +78,83 @@ background: #c5c5c5;
 width: 46px;
 height: 46px;
 margin-left: 461px;
-top: 94px;
+margin-top: -64px;
 }
 .avatarChange
 {
     background-color: #FFFFFF;
     border: 1px solid black;
     width: 150px;
-    height:300px;
+    height:100px;
     margin-top:-40px;
 }
 .inline
 {
     display: grid;
     grid-template-columns: 70% 30%;
+}
+.prevImg
+{
+    max-width: 300px;
+}
+.textarea
+{
+    box-sizing: border-box;
+left:400px;
+position: absolute;
+width: 250px;
+height: 100px;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+border-radius: 21px;
+}
+.confirm
+{
+    width:100px;
+    margin-left: 650px;
+    margin-top: 60px;
+}
+.commentsList
+{
+    margin-top: 100px;
+    
+}
+.commentWrapper
+{
+    box-sizing: border-box;
+  
+
+width: 300px;
+height: 1fr;
+margin-top:10px;
+background: #D9D9D9;
+border: 1px solid #939393;
+box-shadow: 0px 13px 5px 3px rgba(0, 0, 0, 0.25);
+}
+.commentUsername
+{
+    width:300px;
+    height: 20px;
+    border:1px solid black
+}
+.commentText
+{
+    width:300px;
+    height: 1fr;
+    border:1px solid black
+}
+.emailText{
+    position:relative;
+    left:100px;
+    top:-50px;
+    color:red;
+    font-size: 20px;
+}
+.nameText{
+    position:relative;
+    left:100px;
+    top:-70px;
+    color:red;
+    font-size: 20px;
 }

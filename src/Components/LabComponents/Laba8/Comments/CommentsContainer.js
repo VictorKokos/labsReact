@@ -1,6 +1,6 @@
 import Comments from "./Comments";
 import {connect} from 'react-redux'
-import {showInputs} from '../../../../Redux/Laba8Reducer'
+import {showInputs, changeTextInput,changeComment, deleteComment} from '../../../../Redux/Laba8Reducer'
 let mapStateToProps = (state) =>
 {
     return{
@@ -8,5 +8,5 @@ let mapStateToProps = (state) =>
     }
 }
 
-let CommentsContainer = connect(mapStateToProps, {showInputs}) (Comments)
+let CommentsContainer = connect(mapStateToProps, {showInputs, changeTextInput,changeComment, deleteComment}) (Comments)
 export default CommentsContainer
