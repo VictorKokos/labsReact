@@ -1,0 +1,27 @@
+.SortTable
+{
+    border:1px solid black;
+    width:1fr;
+    height:1fr;
+    border-collapse: collapse;
+    
+}
+.td{
+    border:1px solid black;
+    padding: 10px;
+}
+.tdSort{
+    border:1px solid black;
+    padding: 10px;
+    background-color: beige;
+    font-weight: 800;
+}
+.tdOldCost{
+    border:1px solid black;
+    padding: 10px;
+    text-decoration: line-through;
+}
+.miniImg
+{
+    max-width: 100px;
+}
