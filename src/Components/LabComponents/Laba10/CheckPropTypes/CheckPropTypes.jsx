@@ -4,25 +4,13 @@ import React from 'react'
 import { useEffect } from 'react';
 const CheckPropTypes = (props) =>
 {
-let pr = props.Laba10.propsCheck;
+
 useEffect(
     ()=> {props.SomeFunction()}, []
 )
-
-let doNothing = () =>
-{
-    props.SomeFunction()
-}
     return(
         <div>
-          {pr.someArray.map(
-            (elem) =>{return (<li key={elem} onClick={doNothing}>{elem} </li>)}
-          )}  
-          {pr.SomeBool}
-          {pr.SomeNumber}
-          {pr.someObject.a}
-          {pr.SomeString}
-          {pr.SomeSymbol}
+          Компонент CheckPropTypes Принимает props, но не использует их в разметке
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import CheckPropTypesContainer from './CheckPropTypes/CheckPropTypesContainer'
 import s from './Laba10.module.css'
+import SearchContainer from './Search/SearchContainer'
 
 
 
@@ -13,6 +14,7 @@ let Laba10 = () =>
             Laba10
             </div >
          <CheckPropTypesContainer />
+         <SearchContainer />
             </div>
     )
 }

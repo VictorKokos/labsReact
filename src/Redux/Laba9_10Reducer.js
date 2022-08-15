@@ -3,6 +3,9 @@ import { createReducer, createAction} from '@reduxjs/toolkit';
 export const sort = createAction("Laba9sort",
 (changeInf) => {return{payload:{changeInf:changeInf}}})
 
+export const SearchFill = createAction("Laba9SearchFill",
+(changeInf) => {return{payload:{changeInf:changeInf}}})
+
 export const newFirst = createAction("Laba9newFirst")
 export const SomeFunction = createAction("Laba9SomeFunction")
 
@@ -112,6 +115,8 @@ let initialState = {
         },
         
     ],
+    FoundProducts:
+    [],
     sortId:false,
     sortName:false,
     sortAmount:false,
@@ -119,13 +124,15 @@ let initialState = {
     sortCost:false,
     propsCheck:
     {
-        someArray:[2, 3, 5],
+        someArray:[1, 2, 3],
         someBool:false,
         someNumber:34,
-        someObject:{a:"b"},
+        someObject:{a:"проп - объект"},
         someString:"string",
         someSymbol:undefined
-    }
+    },
+    searchValue:'',
+    searchMode:undefined
 }
 
 
@@ -313,6 +320,59 @@ let Laba9Reducer = createReducer(
         [SomeFunction] : (state) =>
         {
             state.propsCheck.someSymbol = Symbol("symbol")
+        },
+        [SearchFill] : (state, action) =>
+        {
+            switch(action.payload.changeInf.name)
+            {
+                case "type":
+                    {
+                        state.searchValue = action.payload.changeInf.value;
+                        break;
+                    }
+                    case "mode":
+                    {
+                        state.searchMode = action.payload.changeInf.value;
+                        break;
+                    }
+                    case "search":
+                    {
+                        state.FoundProducts.splice(0,state.FoundProducts.length)
+                        if(!state.searchMode)
+                        {
+                            
+                        }
+                        if(state.searchMode === "strict")
+                        {
+                            for(let i = 0; i< state.Products.length; i++)
+                            {
+                              if(  state.Products[i].name === state.searchValue)
+                              {
+                                state.FoundProducts.push(state.Products[i])
+                               
+                              }
+                            }
+                            
+                        }
+                        if(state.searchMode === "notstrict")
+                        {
+                            for(let i = 0; i< state.Products.length; i++)
+                            {
+                              if(  state.Products[i].name.includes(state.searchValue))
+                              {
+                                state.FoundProducts.push(state.Products[i])
+                               
+                              }
+                            }
+                        }
+                        break;
+                    }
+                    default:
+                        {
+                            break;
+                        }
+            }
+            
         }
            
     }
