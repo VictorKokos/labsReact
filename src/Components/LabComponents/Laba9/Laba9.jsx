@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import CatalogContainer from './Catalog/CatalogContainer'
 import s from './Laba9.module.css'
 import SortTableContainer from './SortTable/SortTebleContainer'
 
@@ -6,7 +7,7 @@ import SortTableContainer from './SortTable/SortTebleContainer'
 
 
 
-let Laba9 = () =>
+let Laba9 = (props) =>
 {
 let [showSortTable, setShowSortTable] = useState(false)
 let [showCatalog, setShowCatalog] = useState(false)
@@ -20,8 +21,8 @@ let [showCatalog, setShowCatalog] = useState(false)
             </div >
             <button className={s.button} onClick={() => setShowSortTable(!showSortTable)}>Показать/скрыть таблицу</button>
             <button className={s.button} onClick={() => setShowCatalog(!showCatalog)}>Показать/скрыть каталог</button>
-         {showSortTable && !showCatalog ?  <SortTableContainer /> : null     }
-         {showCatalog && !showSortTable ?  <div>catalog</div> : null     }
+         {showSortTable  ?  <SortTableContainer /> : null     }
+         {showCatalog  ?  <CatalogContainer  /> : null     }
             </div>
     )
 }

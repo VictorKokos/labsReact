@@ -1,0 +1,101 @@
+.Catalog
+{
+    width:700px;
+    height:1fr;
+    
+}
+.sort
+{
+    background-color: rgb(255, 240, 240);
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    grid-column-gap: 90px;
+}
+.sortType
+{
+    border-radius: 10%;
+    background-color: red;
+    width:100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:white
+}
+.CatalogItem
+{
+    height:380px;
+    border:1px solid black;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows:1fr 5fr;
+    grid-template-areas: 
+    "extra inf" 
+    "pic inf"
+    "pic inf"
+    "pic inf"
+    "pic inf"
+    "pic inf";
+    margin-top:5px;
+    background: white
+}
+.extra
+{
+    grid-area:extra;
+  display: inline-flex;
+}
+.inf
+{
+    grid-area:inf;
+   
+}
+.pic
+{
+    grid-area: pic;
+    
+    background: white
+}
+.img
+{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    
+}
+.new{
+    width:100px;
+    height: 40px;
+    background: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+.name
+{
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+}
+.crossed
+{
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.cost
+{
+    font-size: 30px;
+}
+.discount
+{
+    background-color: rgb(255, 150, 150);
+    width:120px;
+    height: 40px;
+   
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 10px;
+}
+.description
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

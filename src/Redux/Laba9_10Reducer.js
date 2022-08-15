@@ -3,6 +3,10 @@ import { createReducer, createAction} from '@reduxjs/toolkit';
 export const sort = createAction("Laba9sort",
 (changeInf) => {return{payload:{changeInf:changeInf}}})
 
+export const newFirst = createAction("Laba9newFirst")
+export const SomeFunction = createAction("Laba9SomeFunction")
+
+
 let initialState = { 
     Products:
     [
@@ -113,7 +117,15 @@ let initialState = {
     sortAmount:false,
     sortDiscount:false,
     sortCost:false,
-
+    propsCheck:
+    {
+        someArray:[2, 3, 5],
+        someBool:false,
+        someNumber:34,
+        someObject:{a:"b"},
+        someString:"string",
+        someSymbol:undefined
+    }
 }
 
 
@@ -284,6 +296,23 @@ let Laba9Reducer = createReducer(
                         break;
                     }
             }
+        },
+        [newFirst] : (state) =>
+        {
+            for(let i = 0; i < state.Products.length; i++)
+            {
+          
+                if(state.Products[i].isNew)
+                {
+                    let removed = state.Products.splice(i,1)
+                    state.Products.splice(0,0, removed[0] )  
+                    
+                }
+            }
+        },
+        [SomeFunction] : (state) =>
+        {
+            state.propsCheck.someSymbol = Symbol("symbol")
         }
            
     }

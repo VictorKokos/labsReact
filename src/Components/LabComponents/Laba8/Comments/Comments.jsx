@@ -131,7 +131,7 @@ let CommentsList = (props) =>
         <div className={s.commentsList}>
             {props.Laba8.messages.map((comment, index)=> {
                 return (
-                <div className={s.commentWrapper}> 
+                <div key={comment.id} className={s.commentWrapper}> 
                 <div className={s.commentUsername}> Автор: {comment.username} </div>
                 <div className={s.commentText}> {comment.text} </div>
 

@@ -3,8 +3,8 @@ import { pushYears, pushMonths, pushDays } from './SelectArrays'
 import SignUpEmailInput from './SignUpEmailInput/SignUpEmailInput'
 import SignUpPasswordInput from './SignUpPasswordInput/SignUpPasswordInput'
 import PhoneInput from './PhoneInput/PhoneInput'
-
-
+import PropTypes from 'prop-types'
+import React from 'react'
 const SignUpForm = (props) =>
 {
    let changeTextInput = (e) =>
@@ -43,8 +43,7 @@ const SignUpForm = (props) =>
 
 
 
-
-
+  
 
    let YearsArray =[];
    let MonthsArray = [];
@@ -82,4 +81,27 @@ const SignUpForm = (props) =>
         </div>
     )
 }
+
+SignUpForm.propTypes = {
+   Laba5:PropTypes.shape(
+      {
+         firstName:PropTypes.string,
+         lastName:PropTypes.string,
+         patronymic:PropTypes.string,
+        gender:PropTypes.string,
+        birthYear:PropTypes.string,
+        birthMonth:PropTypes.string,
+        birthDay:PropTypes.string,
+        email:PropTypes.string,
+        isEmailCorrect:PropTypes.bool,
+        password:PropTypes.string,
+      }
+   )
+   
+   };
+
+
 export default SignUpForm
+
+
+

@@ -1,5 +1,5 @@
 import { createReducer, createAction } from '@reduxjs/toolkit';
-
+import PropTypes from 'prop-types'
 
 export const changeInputText = createAction("Laba5ChangeInputText",
 (changeInf) => {return {payload:{changeInf :changeInf}}})

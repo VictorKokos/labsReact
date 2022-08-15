@@ -1,6 +1,6 @@
 import SortTable from "./SortTable";
 import {connect} from 'react-redux'
-import {sort} from '../../../../Redux/Laba9Reducer'
+import {sort} from '../../../../Redux/Laba9_10Reducer'
 let mapStateToProps = (state) =>
 {
     return{

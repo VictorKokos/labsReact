@@ -23,6 +23,7 @@ let SortTable = (props) =>
     return(
     <div>
         <table className={s.SortTable}>
+            <tbody>
 <tr> 
 <td id="number" onClick={onSortClick} className={s.tdSort}>Номер</td>
 <td id="name" onClick={onSortClick} className={s.tdSort}>Название</td>
@@ -35,7 +36,7 @@ let SortTable = (props) =>
 <td className={s.td}>Изображение </td>
 
 </tr>
-{props.Laba9.Products.map((product)=>{return(<tr>
+{props.Laba9.Products.map((product)=>{return(<tr key ={product.id}>
      <td className={s.td}>{product.id}</td>
      <td className={s.td}>{product.name}</td>
      <td className={s.td}>{product.description}</td>
@@ -46,7 +47,7 @@ let SortTable = (props) =>
      <td className={s.td}>{product.cost - product.discount/100*product.cost}</td>
      <td className={s.td}><img className={s.miniImg} src={product.image} /></td>
      </tr>)})}
-
+</tbody>
 
         </table>
     </div>

@@ -1,3 +1,4 @@
+import CheckPropTypesContainer from './CheckPropTypes/CheckPropTypesContainer'
 import s from './Laba10.module.css'
 
 
@@ -11,7 +12,7 @@ let Laba10 = () =>
             <div className={s.title}>
             Laba10
             </div >
-         Laba10
+         <CheckPropTypesContainer />
             </div>
     )
 }
